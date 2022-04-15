@@ -11,7 +11,13 @@ function llenarTabla(){
     let aLesiones = JSON.parse(localStorage.getItem('lesiones_'));
     let aPeso = JSON.parse(localStorage.getItem('peso_'));
 
-let nCantidadAlumnos = aEdades.length;
+    let nCantidadAlumnos = 0; 
+
+    if (aEdades != null){
+      nCantidadAlumnos = aEdades.length;
+    }
+
+
 
 for(let i = 0;i < nCantidadAlumnos; i++){
     let fila = document.createElement('tr');
@@ -27,7 +33,7 @@ for(let i = 0;i < nCantidadAlumnos; i++){
     let nodoTextoNombre = document.createTextNode(aNombres[i]);
     let nodoTextoLesion = document.createTextNode(aLesiones[i]);
     let nodoTextoPeso = document.createTextNode(aPeso[i]);
-
+    console.log("asdasd")
         
     celdaEdad.appendChild(nodoTextoEdad);
     celdaTrabajo.appendChild(nodoTextoTrabajo);

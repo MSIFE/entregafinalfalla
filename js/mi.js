@@ -32,7 +32,7 @@ function registroAlumno(){
     localStorage.setItem('edades_', JSON.stringify(aEdades));
     localStorage.setItem('trabajos_', JSON.stringify(aTrabajos));
     localStorage.setItem('nombres_', JSON.stringify(aNombres));
-    localStorage.setItem('lesion_', JSON.stringify(aLesiones));
+    localStorage.setItem('lesiones_', JSON.stringify(aLesiones));
     localStorage.setItem('peso_', JSON.stringify(aPeso));
     
     llenarTabla();
